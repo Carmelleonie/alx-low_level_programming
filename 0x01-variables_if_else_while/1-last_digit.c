@@ -6,10 +6,11 @@
 *main - Entry point
 *
 *Description: using main function
-
-*Return: 0 (success)
+*this program prints n % 10 is greather than 5, less than 6 or diffent from 0
+*Return: Always 0 (success)
 */
 int main(void)
+
 {
 	int n;
 	int p;
@@ -22,7 +23,7 @@ int main(void)
 		printf("Last digit of %d is %d and is greather than 5\n", n, p);
 	else if (p == 0)
 		printf("Last digit of %d is 0\n", n);
-	else
+	else if (p < 6 && p != 0)
 		printf("Last digit of %d is %d less than 6 and not 0\n", n, p);
 	return (0);
 }
