@@ -9,11 +9,9 @@
 */
 int main(void)
 {
-	int i = 0;
+	int n;
 
-	do {
-		printf("% d", i);
-		i++;
-	} while (i < 10);
+	for (n = 0; n <= 9; n++)
+		printf("% d", n);
 	return (0);
 }
