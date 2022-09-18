@@ -2,22 +2,22 @@
 
 /**
 *main - Entry point
-*@ch:parameter to be print
+*
 *Description: Put char
 *This program prints _putchar
-*Return:  Always void
+*Return: 0 Always (success)
 */
 int main(void)
 {
-	char s[] = "_putchar";
-	int i = 0;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-	while (s[i] != '\0')
-		{
-			_putchar(s[i]);
-			i++;
-		}
-		_putchar(10);
-
-		return (0);
+	return (0);
 }
