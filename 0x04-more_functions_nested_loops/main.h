@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <stdio.>
+#include <stdio.h>
 
 void _putchar(char ch);
 int _isupper(int c);
