@@ -5,26 +5,9 @@
 *
 *@n: absolute value of an integer
 *This program prints the absolute value of an integer
-*Return: n
+*Return: absolute value of n
 */
 int _abs(int n)
 {
-	if (n < 0)
-	{
-		n = -n;
-		_putchar(n);
-	return (n);
-	}
-	else if (n == 0)
-	{
-		n = 0;
-		_putchar(n);
-	return (0);
-	}
-	else
-	{
-		n = n;
-		_putchar(n);
-	return (n);
-	}
+	return (n * ((n > 0) - (n < 0)));
 }
