@@ -12,10 +12,10 @@ int main(void)
 	int j;
 
 	j = _abs(-10);
-	_putchar(j);
+	printf("%d", j);
 	_putchar('\n');
 	j = _abs(0);
-	_putchar(j);
+	printf("%d",j);
 	_putchar('\n');
 	return (0);
 }
