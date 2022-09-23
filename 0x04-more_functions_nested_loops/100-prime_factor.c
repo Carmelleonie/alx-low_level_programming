@@ -8,19 +8,24 @@
 */
 int main(void)
 {
-	unsigned long n, i, max;
+	long number = 612852475143;
+	int a;
 
-	n = 612852475143;
-	max = 1;
-
-	for(i = 3; i <= n; i += 2)
+	while (a++ < number / 2)
 	{
-		while (n % i == 0)
+		if (number % a == 0)
 		{
-			max = n;
-			n = n / i;
+			number /= 2;
+			continue;
+		}
+		for (a = 3; a < number / 2; a += 2)
+		{
+			if (number % a == 0)
+			{
+				number /= a;
+			}
 		}
 	}
-	printf("%lu\n", max);
-	return (0);
+		printf("%ld\n", number);
+		return (0);
 }
