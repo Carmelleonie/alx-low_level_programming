@@ -12,7 +12,9 @@ int main(void)
 	
     char i;
 
-	i = _isupper('A');
+	i = 'A';
+	printf("%c: %d\n", i, _isupper(i));
+	i = 'a';
 	printf("%c: %d\n", i, _isupper(i));
 
     return (0);
