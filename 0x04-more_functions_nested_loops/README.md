@@ -1,1 +1,1 @@
-Write a function that prints a square, followed by a new line.
+Write a program that prints the numbers from 1 to 100, followed by a new line. 

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 *main - Entry point
@@ -11,28 +11,34 @@ int main(void)
 {
 	int num;
 
-	for (num = 1; num <= 100; num++)
+	num = 0;
+	while (num++ < 100)
 	{
-		if (num % 3 == 0)
+		if ((num % 3 == 0) && (num % 5 == 0))
 		{
-			putchar("Fizz");
+			printf("FizzBuzz");
 		}
-
-		else if (num % 5 == 0)
+		else if ((num % 3) == 0)
 		{
-			putchar("Buzz");
+			printf("Fizz");
 		}
-
-		else if (num % 15 == 0)
+		else if ((num % 5) == 0)
 		{
-			putchar("FizzBuzz");
+			if (num != 100)
+			{
+				printf("Buzz");
+			}
+			else
+			{
+				printf("Buzz");
+			}
 		}
-
 		else
 		{
-			putchar(num);
+			printf("%d", num);
 		}
-	putchar(' ');
+		printf(" ");
 	}
+	printf("\n");
 	return (0);
 }
