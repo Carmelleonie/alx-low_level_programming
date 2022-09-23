@@ -2,19 +2,20 @@
 
 /**
 *string_toupper - Entry point
-*@n: input string
+*@str: input string
 *Return: string
 */
-char *string_toupper(char *n)
+char *string_toupper(char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; n[i] != '\n'; i++)
+	while (str[i] != '\0')
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			n[i] = n[i] - 32;
+			str[i] -= 32;
 		}
+		i++;
 	}
-	return (n);
+	return (str);
 }
