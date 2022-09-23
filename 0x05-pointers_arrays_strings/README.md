@@ -1,1 +1,1 @@
-Write a function that prints a string, followed by a new line, to stdout.
+Create a program that generates random valid passwords for the program 101-crackme.
