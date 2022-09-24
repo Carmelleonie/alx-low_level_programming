@@ -1,14 +1,12 @@
 #include "main.h"
 
 /**
-*main - Entry point
-*
-*Description: using the main function
-*This program prints the 9 times tables, starting with 0
-*Return: 0 Always (success)
-*/
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	times_table();
-	return (0);
+    times_table();
+    return (0);
 }
