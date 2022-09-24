@@ -1,1 +1,1 @@
- By considering the terms in the Fibonacci sequence whose values do not exceed 4,000,000, write a program that finds and prints the sum of the even-valued terms, followed by a new line.
+Write a program that prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line.
