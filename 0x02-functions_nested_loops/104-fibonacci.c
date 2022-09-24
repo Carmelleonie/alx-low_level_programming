@@ -17,11 +17,11 @@ int main(void)
 		fib = first + second;
 		if (counter < 97)
 		{
-			printf("%lu", fib);
+			printf("%lu, ", fib);
 		}
 		else
 		{
-			printf("%lu", fib);
+			printf("%lu, ", fib);
 		}
 		first = second;
 		second = fib;
