@@ -4,16 +4,30 @@
 *_strspn - gets the length of string
 *@s: string
 *@accept: string to be used
-*Return: the number of bytes in the initial segment of s which consist only of bytes from accept
+*Return: the number of bytes in the initial segment of s
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	int a = 0;
-	int match = 0;
+	unsigned int a, b, c, d;
 
-	while (s[a] !='\0')
+	c = 0;
+
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		if (_strchr(accept, s[a] == NULL)
+		d = 0;
+
+		for (b = 0; accept[b] != '\0'; b++)
 		{
-			break;
-		match++
+			if (accept[b] == s[a])
+			{
+				c++;
+				d = 1;
+			}
+		}
+		if (d == 0)
+		{
+			return (c);
+		}
+	}
+	return (c);
+}
