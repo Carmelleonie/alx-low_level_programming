@@ -5,17 +5,17 @@
 *@a: interate
 *Return: 1 if n is prime number otherwise 0
 */
-int is_prime(unsigned int n, unsigned int a)
+int is_prime(int n, int a)
 {
-	if (n % a == 0)
+	if (a == 1)
 	{
 		return (1);
 	}
-	else
+	if (n % a == 0)
 	{
 		return (0);
 	}
-	return (0 + is_prime(n, a + 1));
+	return (is_prime(n, a - 1));
 }
 
 
@@ -30,5 +30,9 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (is_prime(n, 2));
+	else if (is_prime(n, n / 2) > 0)
+	{
+		return (1);
+	}
+	return (0);
 }
