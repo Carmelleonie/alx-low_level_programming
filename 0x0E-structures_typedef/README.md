@@ -1,1 +1,3 @@
-Define a new type struct dog with the following elements:
+Define a new type dog_t as a new name for the type struct dog.
+
+
