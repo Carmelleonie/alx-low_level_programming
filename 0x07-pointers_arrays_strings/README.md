@@ -1,1 +1,1 @@
-Write a function that searches a string for any of a set of bytes.
+Write a function that prints the sum of the two diagonals of a square matrix of integers.
