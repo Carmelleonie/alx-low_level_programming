@@ -9,6 +9,10 @@ void free_listint2(listint_t **head)
 {
 	listint_t *new_no = *head;
 
+	if (new_no == NULL)
+	{
+		return;
+	}
 	while (new_no != NULL)
 	{
 		listint_t *anode = new_no;
