@@ -1,1 +1,1 @@
-Write a function that creates a hash table.
+Write a function that gives you the index of a key.
