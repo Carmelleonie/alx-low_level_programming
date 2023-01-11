@@ -1,1 +1,1 @@
-Write a function that retrieves a value associated with a key.
+Write a function that prints a hash table.
