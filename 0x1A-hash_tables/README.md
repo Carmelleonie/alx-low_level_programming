@@ -1,1 +1,1 @@
-Write a function that prints a hash table.
+Write a function that deletes a hash table.
