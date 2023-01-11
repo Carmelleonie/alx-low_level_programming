@@ -1,2 +1,1 @@
-0x1A. C - Hash tables
-
+Write a hash function implementing the djb2 algorithm.
