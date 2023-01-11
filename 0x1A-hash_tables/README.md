@@ -1,1 +1,1 @@
-Write a function that adds an element to the hash table.
+Write a function that retrieves a value associated with a key.
