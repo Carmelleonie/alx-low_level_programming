@@ -1,7 +1,0 @@
-#This is my second Makefile
-
-CC = gcc
-SCR = main.c school.c
-
-all:
-	$(CC) $(SCR) -o school
