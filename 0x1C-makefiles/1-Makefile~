@@ -3,5 +3,5 @@
 CC = gcc
 SCR = main.c school.c
 
-all: school
+all:school
 	$(CC) $(SCR) -o school
