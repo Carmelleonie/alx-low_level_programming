@@ -1,4 +1,0 @@
-CC = gcc
-SCR = .c
-all: $(SRC)
-	$(CC) $(SCR) -o school
