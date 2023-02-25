@@ -1,0 +1,6 @@
+#This is my second Makefile
+CC = gcc #compiler
+SCR = *.c #Source files
+
+all:
+	$(CC) $(SCR) -o school
