@@ -13,14 +13,47 @@
 
 int jump_search(int *array, size_t size, int value)
 {
-	int a, b;
+	int prev, step, n;
 
+	n = size;
 	prev = 0;
 	step = sqrt(n);
+
+	while (array[min(step, n) - 1] < value)
+	{
+		prev = step;
+		step += sqrt(n);
+
+		if (prev >= n)
+		{
+			return (-1);
+		}
+	}
+
+	while (array[prev] < value)
+	{
+		prev = prev + 1;
+		if (prev == min(step, n))
+		{
+			return (-1);
+		}
+	}
+
+	if (array[prev] == value)
+	{
+		return (prev);
+	}
+
+	return (-1);
 }
 
 /**
-*min - 
+*min - search for the min of two values
+*@a: the first parameter
+*@b: the second parameter
+*Return: a if a is lower than b, else b
+*/
+
 int min(int a, int b)
 {
 	if (a < b)
