@@ -7,7 +7,7 @@
 size_t print_listint(const listint_t *h)
 {
 	int len = 0;
-	const listint *temp = h;
+	const listint_t *temp = h;
 
 	while (temp != NULL)
 	{
