@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
-*free_listint - free the linked list
-*@head: the head of the link
+*free_listint - free the list
+*@head: the head of the list
 *Return: Nothing
 */
 void free_listint(listint_t *head)
 {
-	listint_t *no;
+	listint_t *node;
 
 	if (head == NULL)
 	{
@@ -15,8 +15,8 @@ void free_listint(listint_t *head)
 	}
 	while (head != NULL)
 	{
-		no = head;
+		node = head;
 		head = head->next;
-		free(no);
+		free (node);
 	}
 }
