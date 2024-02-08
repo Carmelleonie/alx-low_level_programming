@@ -6,7 +6,7 @@
  * @n: the number to print in binary
  */
 
-void	print_binary_rec(unsigned long int n)
+void print_binary_rec(unsigned long int n)
 {
 	if (n != 0)
 	{
@@ -21,7 +21,7 @@ void	print_binary_rec(unsigned long int n)
  * @n: the number to print in binary
  */
 
-void	print_binary(unsigned long int n)
+void print_binary(unsigned long int n)
 {
 	if (n == 0)
 		_putchar('0');
