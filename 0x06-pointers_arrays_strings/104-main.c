@@ -1,17 +1,43 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+*print_buffer -  C function that prints the content of an
+*  inputted number of bytes from a buffer.
+*@b: number of bytes
+*@size: size of the byte
+*/
+void print_buffer(char *b, int size)
 {
-    char buffer[] = "This is a string!\0And this is the rest of the #buffer :)\1\2\3\4\5\6\7#cisfun\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x20\x21\x34\x56#pointersarefun #infernumisfun\n";
+	int i = 0, j;
 
-    printf("%s\n", buffer);
-    printf("---------------------------------\n");
-    print_buffer(buffer, sizeof(buffer));
-    return (0);
+	if (size < 0)
+	{
+		printf('\n');
+		return;
+	}
+
+	while (i < size)
+	{
+		if (i % 10 == 0)
+			printf("%08x: ", i);
+		for (j = i; j < i + 9; j += 2)
+		{
+			if ((j < size) && ((j + 1) < size))
+				printf("%02x%02x: ", b[j], b[j + 1]);
+			else
+			{
+				while (++j <= i + 10)
+					printf(" ");
+				printf(" ");
+			}
+		}
+		for (j = i; j < i + 9 && j < size; j++)
+		{
+			if (b[j] >= 32 && b[j] <= 126)
+				printf("%c", b[j]);
+			else
+				printf(".");
+		}
+		printf('\n');
+		i += 10;
+	}
 }
