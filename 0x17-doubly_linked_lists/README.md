@@ -1,1 +1,1 @@
-Write a function that frees a dlistint_t list.
+0x17-doubly_linked_lists
