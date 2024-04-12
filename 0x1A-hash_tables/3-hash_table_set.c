@@ -8,7 +8,7 @@
 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-unsigned long int index = 0;
+	unsigned long int index = 0;
 	char *newval = NULL;
 	hash_node_t *temp = NULL, *newhash = NULL;
 
@@ -36,7 +36,7 @@ unsigned long int index = 0;
 		}
 		temp = temp->next;
 	}
-	/* If a collision doesn't exits, insert node */
+	/* If a collision doesn't exits, insert node directly*/
 	newhash = malloc(sizeof(hash_node_t));
 	if (!newhash)
 	{
